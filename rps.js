@@ -1,22 +1,25 @@
 function rockPaperScissors(player1, player2) {
-//rock paper or scissors, 
+  if (player1 === player2) {
+    return "draw" ;   
+  } else if ((player1 === "paper" && player2 === "rock") || // - '||' is a js operator
+           (player1 ==="scissors" && player2 === "paper") || // - '===' is used when 2 objects are being compared
+           (player1 ==="rock" && player2 === "scissors") ||
+           (player1 ==="scissors" && player2 === "lizard") ||
+           (player1 ==="lizard" && player2 === "paper") ||
+           (player1 ==="spock" && player2 === "rock") ||
+           (player1 === "lizard" && player2 === "spock") ||
+           (player1 === "spock" && player2 === "scissors") ||
+           (player1 === "rock" && player2 === "lizard") ||
+           (player1 ==="spock" && player2 === "scissors") ||
+           (player1 === "paper" && player2 === "spock") 
 
-if  (player1 === player2 ) {
-return("draw")    
+           ){
+            return "player1"
+          } else {
+            return "player2"
+          }
 }
-else if (player1==="paper" && player2==="rock" || // - '||' is a js operator
-  player1 ==="scissor" && player2 === "paper" ||
-  player1 ==="rock" && player2 === "scissor" ||
-)
-  {
-
-} 
-else {
-
-}
-}
-
-console.log(rockPaperScissors("paper" , "paper"));
+console.log(rockPaperScissors());
 
 //if (player1 => player2);{
  // return("player1 wins");
