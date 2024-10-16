@@ -1,16 +1,24 @@
 function rockPaperScissors(player1, player2) {
 //rock paper or scissors, 
-let = {scissors: "rock", //rock wins against scissors
-paper:"scissors",//scissors wins against paper
-rock: "paper"//paper wins against rock
-}
-if  (player1 === player2 )
+
+if  (player1 === player2 ) {
 return("draw")    
 }
+else if (player1==="paper" && player2==="rock" ||//js operator
 
-if (player1 => player2);{
-  return("player1 wins");
+) {
+
 } 
+else {
+
+}
+}
+
+console.log(rockPaperScissors("paper" , "paper"));
+
+//if (player1 => player2);{
+ // return("player1 wins");
+
 
 
 
